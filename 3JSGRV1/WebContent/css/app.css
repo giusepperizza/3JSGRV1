@@ -1,1 +1,14 @@
-@charset "ISO-8859-1";
+*{
+	font-family: 'Karma', serif;
+}
+
+.header-text{
+	color:#FFFFFF;
+	text-align:left;
+	font-size:1.5em;
+	margin-left: 20px;
+}
+
+.pointer {
+	cursor:pointer;
+}
