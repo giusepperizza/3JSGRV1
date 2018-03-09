@@ -1,11 +1,11 @@
-<div class="pos-f-t">
+<div class="pos-f-t" x-ng-controller="header">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
       <h4 class="text-white">menu</h4>
       <div class="col-md-24">
-	      <span class="col-md-4 text-muted pointer">Modellazione</span>
-	      <span class="col-md-4 text-muted pointer">Animazione</span>
-	      <span class="col-md-4 text-muted pointer">Interattivit&agrave;</span>
+	      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('modellazione')">Modellazione</span>
+	      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('animazione')">Animazione</span>
+	      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('interattivita')">Interattivit&agrave;</span>
       </div>
     </div>
   </div>
