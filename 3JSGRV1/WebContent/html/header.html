@@ -1,20 +1,22 @@
-<div class="pos-f-t" x-ng-controller="header">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h4 class="text-white">menu</h4>
-      <div class="col-md-24">
-	      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('modellazione')">Modellazione</span>
-	      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('animazione')">Animazione</span>
-	      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('interattivita')">Interattivit&agrave;</span>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-2x fa-bars"></i>
-    </button>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-    	<li class="header-text">Three.js & WebGL - Esplorazione delle capacit&agrave; di animazione e interattivit&agrave;</li>
-    </ul>
-  </nav>
-</div>
+<header>
+	<div class="pos-f-t" x-ng-controller="header">
+	  <div class="collapse" id="navbarToggleExternalContent">
+	    <div class="bg-dark p-4">
+	      <h4 class="text-white pointer" x-ng-click="goHome()"><i class="fas fa-home"></i></h4>
+	      <div class="col-md-24">
+		      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('modellazione')">Modellazione</span>
+		      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('animazione')">Animazione</span>
+		      <span class="col-md-4 text-muted pointer" x-ng-click="goToSelectedState('interattivita')">Interattivit&agrave;</span>
+	      </div>
+	    </div>
+	  </div>
+	  <nav class="navbar navbar-dark bg-dark">
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <i class="fas fa-2x fa-bars"></i>
+	    </button>
+	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	    	<li class="header-text">Three.js &amp; WebGL - Esplorazione delle capacit&agrave; di animazione e interattivit&agrave;</li>
+	    </ul>
+	  </nav>
+	</div>
+</header>

@@ -17,7 +17,7 @@ var appModule = angular.module('app', ['ngRoute', 'ui.router'])
 	})
 	
 //	$locationProvider.html5Mode(true);
-//	$locationProvider.hashPrefix("!");
+//	$locationProvider.hashPrefix("");
 })
 .run(function($rootScope){
 	
