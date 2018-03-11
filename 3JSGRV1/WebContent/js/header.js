@@ -6,4 +6,8 @@ appModule.controller('header', function($scope, $state) {
     $scope.goHome = function(){
     	$state.go("home", {});
     }
+    
+    $scope.goBio = function(){
+    	$state.go("bio", {});
+    }
 });

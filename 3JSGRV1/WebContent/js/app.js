@@ -15,6 +15,11 @@ var appModule = angular.module('app', ['ngRoute', 'ui.router'])
 		templateUrl: 'html/home.html',
 		controller: 'home',
 	})
+	.state('bio', {
+		url: '/bio',
+		templateUrl: 'html/bio.html',
+		controller: 'bio'
+	})
 	
 //	$locationProvider.html5Mode(true);
 //	$locationProvider.hashPrefix("");
