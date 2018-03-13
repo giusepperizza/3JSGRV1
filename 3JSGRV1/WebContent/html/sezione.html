@@ -1,1 +1,16 @@
-<div>sezione: {{selectedSezione}}</div>
+<div class="row">
+	<div id="sezione" class="card-group">
+		<div class="card" x-ng-repeat="p in datiSezione">
+			<img class="card-img-top" src="{{p.anteprima}}" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">{{p.titolo}}</h5>
+				<p class="card-text">{{p.descrizione}}</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+				<p class="card-text">
+					<small class="text-muted">Ultimo aggiornamento:
+						{{p.lastUpdate | date: "MM.yyyy"}}</small>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

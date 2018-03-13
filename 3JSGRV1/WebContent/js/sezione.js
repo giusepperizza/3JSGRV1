@@ -1,5 +1,6 @@
 appModule.controller('sezione', function($scope, $state, $http) {
 	$scope.selectedSezione = $state.params.sezione;
+    $scope.loading = true;
     
 	$scope.loadSezione = function(){
 		var filePath = "resources/3JSDS-";
@@ -21,9 +22,11 @@ appModule.controller('sezione', function($scope, $state, $http) {
 			contentType: "application/json"
 		})
 		.then(function successCallback(response){
-			$scope.datiSezione = response;
+			$scope.datiSezione = response.data;
+			$scope.loading = false;
 		}, function errorCallback(response){
-			
+			//TODO ERRORE CHIAMATA
+			$scope.loading = false;
 		});
 	}
 	

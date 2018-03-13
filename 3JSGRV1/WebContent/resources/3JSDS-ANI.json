@@ -1,0 +1,18 @@
+[
+	{
+		"id" : "mod-1",
+		"titolo" : "Three.js: Animazione base",
+		"descrizione" : "This is the description 1",
+		"uri" : "",
+		"anteprima" : "",
+		"lastUpdate" : "13/12/1988"
+	},
+	{
+		"id" : "mod-2",
+		"titolo" : "Three.js: Animazione complessa",
+		"descrizione" : "This is the description 2",
+		"uri" : "",
+		"anteprima" : "",
+		"lastUpdate" : "13/12/1988"
+	}
+]
