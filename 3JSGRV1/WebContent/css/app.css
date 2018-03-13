@@ -21,3 +21,16 @@
   line-height: 60px;
   background-color: #f5f5f5;
 }
+
+.sezione-titolo{
+	min-height : 50px;
+}
+
+.sezione-element{
+    margin: 10px;
+    width:98%;
+}
+
+.sezione-lista {
+	margin: 9px;
+}

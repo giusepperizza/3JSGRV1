@@ -1,14 +1,17 @@
 <div class="row">
-	<div id="sezione" class="card-group">
-		<div class="card" x-ng-repeat="p in datiSezione">
-			<img class="card-img-top" src="{{p.anteprima}}" alt="Card image cap">
+<h2 class="col-md-12"><i class="far fa-hand-point-right"></i> {{selectedSezione}}</h2>
+	<div x-ng-repeat="dati in datiSezione" class="sezione-lista">
+		{{dati.linguaggio}}
+		<div class="card bg-light sezione-element"
+			x-ng-repeat="scena in dati.lista">
+			<img class="card-img-top" src="{{scena.src}}" alt="{{scena.alt}}">
 			<div class="card-body">
-				<h5 class="card-title">{{p.titolo}}</h5>
-				<p class="card-text">{{p.descrizione}}</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+				<h5 class="card-title sezione-titolo">{{scena.titolo}}</h5>
+				<p class="card-text">{{scena.descrizione}}</p>
+				<a href="{{scena.uri}}" target="_blank" class="btn btn-secondary">Go somewhere</a>
 				<p class="card-text">
 					<small class="text-muted">Ultimo aggiornamento:
-						{{p.lastUpdate | date: "MM.yyyy"}}</small>
+						{{scena.lastUpdate}}</small>
 				</p>
 			</div>
 		</div>
