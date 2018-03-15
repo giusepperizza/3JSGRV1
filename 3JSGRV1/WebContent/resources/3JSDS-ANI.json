@@ -2,70 +2,19 @@
 	{ 
 	"linguaggio" : "Three.js",
 	"lista": [
-			{
-				"id" : "mod-1",
-				"titolo" : "Three.js: Modellazione base",
-				"descrizione" : "This is the description 1",
-				"uri" : "",
-				"src" : "",
-				"alt" :"",
-				"lastUpdate" : "13/03/2018"
-			},
-			{
-				"id" : "mod-2",
-				"titolo" : "Three.js: Modellazione complessa",
-				"descrizione" : "This is the description 2",
-				"uri" : "",
-				"src" : "",
-				"alt" :"",
-				"lastUpdate" : "13/03/2018"
-			}
+
 			]
 	},
 	{
 	"linguaggio" : "PlayCanvas",
 	"lista" : [
-			{
-				"id" : "mod-2",
-				"titolo" : "PlayCanvas Interattivita complessa",
-				"descrizione" : "This is the description 2",
-				"uri" : "",
-				"src" : "",
-				"alt" :"",
-				"lastUpdate" : "13/03/2018"
-			},
-			{
-				"id" : "mod-2",
-				"titolo" : "PlayCanvas Interattivita complessa",
-				"descrizione" : "This is the description 2",
-				"uri" : "",
-				"src" : "",
-				"alt" :"",
-				"lastUpdate" : "13/03/2018"
-			}
+			
 		]
 	},
 	{
 	"linguaggio" : "Blend4Web",
 	"lista" : [
-			{
-				"id" : "mod-2",
-				"titolo" : "Blend4Web Interattivita complessa",
-				"descrizione" : "This is the description 2",
-				"uri" : "",
-				"src" : "",
-				"alt" :"",
-				"lastUpdate" : "13/03/2018"
-			},
-			{
-				"id" : "mod-2",
-				"titolo" : "Blend4Web Interattivita complessa",
-				"descrizione" : "This is the description 2",
-				"uri" : "",
-				"src" : "",
-				"alt" :"",
-				"lastUpdate" : "13/03/2018"
-			}
+			
 		]
 	}
 ]

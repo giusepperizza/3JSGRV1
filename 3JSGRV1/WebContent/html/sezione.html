@@ -1,19 +1,22 @@
-<div class="row">
+<div x-loading x-visible-when="loading"></div>
+<div x-ng-show="!loading" class="row">
 <h2 class="col-md-12"><i class="far fa-hand-point-right"></i> {{selectedSezione}}</h2>
 	<div x-ng-repeat="dati in datiSezione" class="sezione-lista">
 		{{dati.linguaggio}}
-		<div class="card bg-light sezione-element"
-			x-ng-repeat="scena in dati.lista">
-			<img class="card-img-top" src="{{scena.src}}" alt="{{scena.alt}}">
+		<div x-ng-show="dati.lista.length > 0" class="card bg-light sezione-element" x-ng-repeat="scena in dati.lista">
+			<!-- <img class="card-img-top" src="{{scena.src}}" alt="{{scena.alt}}"> -->
 			<div class="card-body">
 				<h5 class="card-title sezione-titolo">{{scena.titolo}}</h5>
 				<p class="card-text">{{scena.descrizione}}</p>
-				<a href="{{scena.uri}}" target="_blank" class="btn btn-secondary">Go somewhere</a>
+				<a href="{{scena.path}}" target="_blank" class="btn btn-secondary">Visit this scene!</a>
 				<p class="card-text">
 					<small class="text-muted">Ultimo aggiornamento:
 						{{scena.lastUpdate}}</small>
 				</p>
 			</div>
 		</div>
+			<div x-ng-show="dati.lista.length == 0" class="sezione-element"> 
+		<p>Ancora nessuna scena disponibile
+	</div>
 	</div>
 </div>
