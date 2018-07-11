@@ -25,5 +25,5 @@ var appModule = angular.module('app', ['ngRoute', 'ui.router'])
 //	$locationProvider.hashPrefix("");
 })
 .run(function($rootScope){
-	$rootScope.versione = "1.0";
+	$rootScope.versione = "1.1";
 });

@@ -12,7 +12,8 @@ appModule.controller('sezione', function($scope, $state, $http) {
 			filePath += "ANI.json";
 			break;
 		case "interattivita":
-			filePath += "INT.json"
+			filePath += "INT.json";
+			break;
 		}
 		
 		$http({
